@@ -1,6 +1,5 @@
 package com.lionel.gereville.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.lionel.gereville.dao.PaysDAO;
@@ -12,7 +11,6 @@ import com.lionel.gereville.ihm.UIfrmVille;
 import com.lionel.gereville.ihm.UIfrmVilleEventsListener;
 import com.lionel.gereville.model.Pays;
 import com.lionel.gereville.model.Ville;
-import com.lionel.gereville.util.VilleFichier;
 
 public class GerevilleController implements UIGerevilleEventsListener, UIfrmVilleEventsListener, UIfrmPaysEventsListener{
 	
