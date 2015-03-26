@@ -17,6 +17,7 @@ public class GerevilleController implements UIGerevilleEventsListener, UIfrmVill
 	private UIGereville uiGereville;
 	private UIfrmVille frmVille = null;
 	private UIfrmPays frmPays = null;
+	//commioyoi
 
 	
 	
