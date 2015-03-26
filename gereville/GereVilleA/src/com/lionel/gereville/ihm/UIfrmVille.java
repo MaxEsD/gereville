@@ -95,7 +95,7 @@ public class UIfrmVille extends JFrame {
 		this.setSize(new Dimension(465, 302));
 		this.setTitle("Saisie d'une ville");
 
-		contentPane = (JPanel) this.getContentPane();
+		contentPane = new JPanel();
 		contentPane.setLayout(gridBagLayout1);
 
 		lblSaisieTitle.setFont(new java.awt.Font("SansSerif", 1, 18));
@@ -193,6 +193,8 @@ public class UIfrmVille extends JFrame {
 		contentPane.add(lblSaisieTitle, new GridBagConstraints(0, 0, 3, 1, 0.0,
 				0.0, GridBagConstraints.WEST, GridBagConstraints.NONE,
 				new Insets(12, 46, 0, 52), 219, 5));
+		
+		setContentPane(contentPane);
 	}
 
 	@Override
