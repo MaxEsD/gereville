@@ -12,6 +12,8 @@ import com.lionel.gereville.ihm.UIfrmPays;
 import com.lionel.gereville.ihm.UIfrmVille;
 
 public class AppGereville {
+	
+	
 
 	private GerevilleController mainControler;
 	private UIGereville mainUI;
