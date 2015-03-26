@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_31" class="java.beans.XMLDecoder">
+ <object class="com.lionel.gereville.model.ListeVille">
+  <void method="add">
+   <object class="com.lionel.gereville.model.Capitale">
+    <void property="nbHabitants">
+     <double>12154.0</double>
+    </void>
+    <void property="pays">
+     <string>France</string>
+    </void>
+    <void property="president">
+     <string>GROLANDE</string>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
