@@ -12,12 +12,11 @@ import com.lionel.gereville.model.Pays;
 import com.lionel.gereville.model.Ville;
 
 public class PaysDAO {
-	 private static Connection c;
 	 
 	 
 	 public static List<Pays> getPays(){
 		 
-		 c = Connect.cConnect();
+		 Connection c = Connect.cConnect();
 		 
 		 
 		 List<Pays> ps = new ArrayList<>();
@@ -54,7 +53,7 @@ public class PaysDAO {
 	 
 	 public static Pays getPays(int numPays){
 		 Pays p = null;
-		 c = Connect.cConnect();
+		 Connection c = Connect.cConnect();
 		  Statement stm;
 			try {
 				stm = c.createStatement();
@@ -89,7 +88,7 @@ public class PaysDAO {
 				 " INNER JOIN ville_pays ON (ville_pays.num_ville = ville.num )" +
 				"  WHERE ville_pays.num_pays =" + numPays;
 		 
-		 c = Connect.cConnect();
+		 Connection c = Connect.cConnect();
 		 
 		 List<Ville> villes = new ArrayList<>();
 		   Statement stm;
@@ -126,7 +125,7 @@ public class PaysDAO {
 	 
 	 public static void createPays(Pays p) {
 		 
-		 c = Connect.cConnect();
+		 Connection c = Connect.cConnect();
 		 PreparedStatement stm;
 		try {
 			stm = c.prepareStatement("INSERT INTO pays (nom, nbhabitant) VALUES (?,?)");
